@@ -10,7 +10,7 @@ To run the project locally, follow these steps:
 npm install
 ```
 
-### To generate pdf use this command
+### To generate pdf run this command
 
 ```bash
 npm run start
