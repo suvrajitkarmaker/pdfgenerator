@@ -14,7 +14,7 @@ const compile = async function (templateName, data) {
   return hbs.compile(html)(data);
 };
 
-exports.reportGenerate = async (fileName, data) => {
+exports.pdfGenerator = async (fileName, data) => {
   try {
     const browser = await pupp.launch({
       args: ["--no-sandbox"],

@@ -1,4 +1,5 @@
-const { reportGenerate } = require("./helper/ReportGenerate");
+const { pdfGenerator } = require("./helper/pdfGenerator");
+
 async function generatePdf() {
   let ReportDeta = {
     name: "Shakib al hasan",
@@ -30,7 +31,7 @@ async function generatePdf() {
   };
 
   const fileName = "shakib_al_hasan_statistics";
-  let buffer = await reportGenerate(fileName, ReportDeta);
+  let buffer = await pdfGenerator(fileName, ReportDeta);
 
   //you can use this buffer if you want to upload this file to any storage (like: AWS S3)
 }
