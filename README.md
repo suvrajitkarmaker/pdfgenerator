@@ -10,11 +10,9 @@ To run the project locally, follow these steps:
 npm install
 ```
 
-### 3. To generate pdf use this command. And you fill find the pdf in generatedFile fordar
-
-Navigate to the `server` directory and then run `docker-compose up` command like
-below. It will spin up the databases as daemon mode.
+### 3. To generate pdf use this command
 
 ```bash
 npm run start
 ```
+Now you will find the generated pdf in generatedFile folder
