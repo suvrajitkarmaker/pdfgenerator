@@ -1,0 +1,197 @@
+<style type="text/css">
+    html,
+    body {
+        font-family: Roboto, "Times New Roman", serif;
+    }
+
+    h4 {
+        margin-bottom: 0px;
+    }
+
+    h5 {
+        margin: 0px;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .f-small {
+        font-size: 0.83rem;
+    }
+
+    .color-primary {
+        color: #1a97f5;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 980px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 70px;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    .fw-500 {
+        font-weight: 500 !important;
+    }
+
+
+    .divider {
+        border-top: 1px solid#cbcbcb;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .w-40 {
+        width: 40%;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+
+    .mt-2 {
+        margin-top: 2rem;
+    }
+
+    .mt-3 {
+        margin-top: 3rem;
+    }
+
+    .mt-1 {
+        margin-top: 1rem;
+    }
+
+    .mb-0 {
+        margin-bottom: 0px;
+    }
+
+    .table {
+        border-collapse: collapse;
+    }
+
+    .thQuestion {
+        width: 35%
+    }
+
+    .tr {
+        height: 30px;
+        background: #95a000;
+    }
+
+    .trbodyRow {
+        min-height: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+
+    tfoot {}
+</style>
+
+
+<html>
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <img src="https://www.tigercricket.com.bd/extra-images/BCB-logo.jpg" class="logo" />
+            <h2>Bangladesh national cricket team</h2>
+        </div>
+        <hr class="divider" />
+        <h3 class="mb-0">Player Details</h3>
+        <div class="d-flex justify-content-between">
+            <div class="w-40">
+                <div class="d-flex justify-content-between align-items-center mt-1">
+                    <h5>Name</h5>
+                    <p class="f-small">{{name}}</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-1">
+                    <h5>Address</h5>
+                    <p class="f-small">{{address}}</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-1">
+                    <h5>Playing role</h5>
+                    <p class="f-small">{{payling_role}}</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider mt-2" />
+        <h3>Batting Career Summary</h3>
+        <div class="mt-1 d-flex justify-content-between">
+            <div class="w-100">
+                <table class="w-100 table">
+                    <thead>
+                        <tr class="tr">
+                            <th class="tableCellborder">Format</th>
+                            <th class="tableCellborder">Match</th>
+                            <th class="tableCellborder">Runs</th>
+                            <th class="tableCellborder">HS</th>
+                            <th class="tableCellborder">Ave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Use Loop -->
+                        {{#each list}}
+                        <tr>
+                            <td class="tdbody">
+                                <p class="f-small text-center">{{format}}</9>
+                            </td>
+                            <td class="tdbody">
+                                <p class="f-small text-center">{{match}}</9>
+                            </td>
+                            <td class="tdbody">
+                                <p class="f-small text-center">{{runs}}</9>
+                            </td>
+                            <td class="tdbody">
+                                <p class="f-small text-center">{{hs}}</9>
+                            </td>
+                            <td class="tdbody">
+                                <p class="f-small text-center">{{avs}}</9>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+</html>
